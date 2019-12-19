@@ -39,6 +39,7 @@ def Recognize(emotion):
   #cmd = cmd_1+" "+str(num)
   try:
       if(sum(data) != 0):
+          #main.jsのファイルを読み込む
           subprocess.call(f"node main.js {str(num)}", shell=True)
   except ValueError:
       print("google home error")
